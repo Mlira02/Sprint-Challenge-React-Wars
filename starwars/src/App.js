@@ -6,10 +6,11 @@ import styled from 'styled-components';
 
 
 const StyledDiv1 = styled.div`
-border: 1px dashed black;
 margin: 4px;
-padding:5px;
-display:flex;
+padding: 5px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
 `
 
 const App = () => {
@@ -34,7 +35,7 @@ useEffect(() => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <h1 className="Header"><strong>React Wars</strong></h1>
       <StyledDiv1>
       <StarWarsCard characters={characters} />
       </StyledDiv1>
